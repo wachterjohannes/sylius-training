@@ -17,6 +17,26 @@ app_admin:
     resource: "routing/admin.yml"
     prefix: /admin
 
+app_shop_warranty_plan-index:
+    path: /warranty-plans
+    defaults:
+        _controller: app.controller.warranty_plan:indexAction
+        _sylius:
+            template: AppBundle::warranty.html.twig
+
+app_shop_warranty_plan.create:
+    path: /warranty-plans/create
+    defaults:
+        _controller: app.controller.warranty_plan:createAction
+        _sylius:
+            template: AppBundle::warranty_create.html.twig
+
+app_shop_warranty_plan.json:
+    path: /plans.json
+    defaults:
+        _controller: app.controller.warranty_plan:indexAction
+        _format: json
+
 sylius_shop:
     resource: "@SyliusShopBundle/Resources/config/routing.yml"
     prefix: /{_locale}
