@@ -1,0 +1,10 @@
+AppBundle\Entity\Customer:
+    type: entity
+    table: sylius_customer
+    manyToOne:
+        warrantyPlan:
+            targetEntity: AppBundle\Entity\WarrantyPlan
+            joinColumn:
+                name: warranty_plan_id
+                referencedColumnName: id
+                nullable: true

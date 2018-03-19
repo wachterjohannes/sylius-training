@@ -3,3 +3,8 @@ sylius_resource:
         app.warranty_plan:
             classes:
                 model: AppBundle\Entity\WarrantyPlan
+sylius_customer:
+    resources:
+        customer:
+            classes:
+                model: AppBundle\Entity\Customer
