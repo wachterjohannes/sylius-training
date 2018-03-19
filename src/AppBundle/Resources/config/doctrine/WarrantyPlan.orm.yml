@@ -1,0 +1,26 @@
+AppBundle\Entity\WarrantyPlan:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\WarrantyPlanRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        code:
+            type: string
+            length: 255
+            unique: true
+        description:
+            type: text
+            nullable: true
+        price:
+            type: integer
+        term:
+            type: integer
+    lifecycleCallbacks: {  }
