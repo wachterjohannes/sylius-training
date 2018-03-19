@@ -1,0 +1,32 @@
+sylius_grid:
+    grids:
+        app_admin_warranty_plan:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: AppBundle\Entity\WarrantyPlan
+            filters:
+                search:
+                    type: string
+                    label: sylius.ui.label
+                    options:
+                        fields: ['name', 'code']
+            fields:
+                code:
+                    type: string
+                    sortable: true
+                name:
+                    type: string
+                price:
+                    type: string
+                term:
+                    type: string
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete

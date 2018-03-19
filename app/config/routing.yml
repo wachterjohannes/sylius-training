@@ -13,6 +13,10 @@ app_api:
     resource: "routing/api.yml"
     prefix: /api/{version}
 
+app_admin:
+    resource: "routing/admin.yml"
+    prefix: /admin
+
 sylius_shop:
     resource: "@SyliusShopBundle/Resources/config/routing.yml"
     prefix: /{_locale}

@@ -1,5 +1,8 @@
-app_api_warranty_plan:
+app_admin_warranty_plan:
     resource: |
         alias: app.warranty_plan
-        section: api
-    type: sylius.resource_api
+        section: admin
+        grid: app_admin_warranty_plan
+        templates: SyliusAdminBundle:Crud
+        redirect: index
+    type: sylius.resource

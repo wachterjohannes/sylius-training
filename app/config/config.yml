@@ -10,6 +10,7 @@ imports:
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }
     - { resource: "resources.yml" }
+    - { resource: "grids.yml" }
 
 parameters:
     locale: en_US
