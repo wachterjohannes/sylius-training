@@ -9,7 +9,7 @@ class Customer extends \Sylius\Component\Core\Model\Customer
      */
     private $warrantyPlan;
 
-    public function getWarrantyPlan(): WarrantyPlan
+    public function getWarrantyPlan(): ?WarrantyPlan
     {
         return $this->warrantyPlan;
     }

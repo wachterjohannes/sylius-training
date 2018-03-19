@@ -169,4 +169,9 @@ class WarrantyPlan implements ResourceInterface
     {
         return $this->term;
     }
+
+    public function __toString()
+    {
+        return $this->name;
+    }
 }
