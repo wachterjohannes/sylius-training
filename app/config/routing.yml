@@ -9,6 +9,10 @@ sylius_api:
     resource: "@SyliusAdminApiBundle/Resources/config/routing.yml"
     prefix: /api
 
+app_api:
+    resource: "routing/api.yml"
+    prefix: /api/{version}
+
 sylius_shop:
     resource: "@SyliusShopBundle/Resources/config/routing.yml"
     prefix: /{_locale}

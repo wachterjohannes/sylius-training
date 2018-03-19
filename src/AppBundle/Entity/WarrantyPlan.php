@@ -2,10 +2,12 @@
 
 namespace AppBundle\Entity;
 
+use Sylius\Component\Resource\Model\ResourceInterface;
+
 /**
  * WarrantyPlan
  */
-class WarrantyPlan
+class WarrantyPlan implements ResourceInterface
 {
     /**
      * @var int

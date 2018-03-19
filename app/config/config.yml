@@ -9,6 +9,7 @@ imports:
 
     - { resource: "parameters.yml" }
     - { resource: "security.yml" }
+    - { resource: "resources.yml" }
 
 parameters:
     locale: en_US

@@ -1,0 +1,5 @@
+app_api_warranty_plan:
+    resource: |
+        alias: app.warranty_plan
+        section: api
+    type: sylius.resource_api

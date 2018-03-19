@@ -1,0 +1,5 @@
+sylius_resource:
+    resources:
+        app.warranty_plan:
+            classes:
+                model: AppBundle\Entity\WarrantyPlan
